@@ -116,18 +116,42 @@ public class Ejercicios_01 {
             System.out.println("mystring no es igual a Jose ni a Maria");
         }
 
-        // Iterativas
+        // *****Iterativas***** //
 
         // for permite ejecutar un bloque de código un número determinado de veces
         for (int i = 0; i < 5; i++) {
             System.out.println("Iteración for: " + i);
         }
 
-        int maxNumber =  10;
         // while permite ejecutar un bloque de código mientras se cumpla una condición
+        int maxNumber = 10;
         while (maxNumber < 20) {
             System.out.println("Iteración while: " + maxNumber);
             maxNumber++;
+        }
+        System.out.println("Valor final de maxNumber: " + maxNumber);
+
+        // do-while permite ejecutar un bloque de código al menos una vez y luego
+        // repetirlo mientras se cumpla una condición
+        int contadorDoWhile = 0;
+        do {
+            System.out.println("Iteración do-while: " + contadorDoWhile);
+            contadorDoWhile++;
+        } while (contadorDoWhile < 5);
+
+
+
+        // *****Manejo de excepciones***** //
+       
+        // try-catch permite manejar excepciones que pueden ocurrir durante la ejecución del programa
+        try {
+            int resultadoDivision = 10 / 0; // Esto lanzará una excepción de división por cero
+            System.out.println("Resultado de la división: " + resultadoDivision);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: No se puede dividir por cero. " + e.getMessage());
+        }finally {
+            // El bloque finally se ejecuta siempre, independientemente de si se lanzó una excepción o no
+            System.out.println("Programa finalizado."); //
         }
 
     }
