@@ -1,6 +1,6 @@
 package com.example;
 
-public class Ejercios_00 {
+public class Ejercicios_00 {
     // https://www.java.com/es/
 
     /*esto es un

@@ -139,19 +139,30 @@ public class Ejercicios_01 {
             contadorDoWhile++;
         } while (contadorDoWhile < 5);
 
-
-
         // *****Manejo de excepciones***** //
-       
-        // try-catch permite manejar excepciones que pueden ocurrir durante la ejecución del programa
+
+        // try-catch permite manejar excepciones que pueden ocurrir durante la ejecución
+        // del programa
         try {
             int resultadoDivision = 10 / 0; // Esto lanzará una excepción de división por cero
             System.out.println("Resultado de la división: " + resultadoDivision);
         } catch (ArithmeticException e) {
             System.out.println("Error: No se puede dividir por cero. " + e.getMessage());
-        }finally {
-            // El bloque finally se ejecuta siempre, independientemente de si se lanzó una excepción o no
+        } finally {
+            // El bloque finally se ejecuta siempre, independientemente de si se lanzó una
+            // excepción o no
             System.out.println("Programa finalizado."); //
+        }
+
+        // extra
+        // Imprime los números pares entre 10 y 55, excepto el número 16, que es un número
+        int min = 10;
+        int max = 55;
+        for (int i = min; i < max; i++) {
+            if (i % 2 == 0 && i != 16 && i % 3 == 0) {
+                System.out.println(i);
+
+            }
         }
 
     }
