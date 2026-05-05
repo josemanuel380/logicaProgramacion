@@ -80,7 +80,7 @@ public class Ejercicios_02 {
         System.out.println("Coordenadas: (" + x + ", " + y + ", " + z + ")");
     }
 
-    /*********************************
+    /**********************************
      * Variable Local Y Global
      **********************************/
 
